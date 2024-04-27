@@ -58,4 +58,4 @@ This Python script generates a comprehensive report for the GATE (Graduate Aptit
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.txt) file for details.
