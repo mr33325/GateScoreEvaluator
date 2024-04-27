@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Exam Report</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="file:///C:/Users/mr333/Documents/Python%20Scripts/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="file:///C:/Users/mr333/Documents/Python%20Scripts/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: NiceAdmin
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="exam_summary.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+        <span class="d-none d-lg-block">Test Report {}</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link " href="exam_summary.html">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+    </ul>
+
+  </aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Dashboard</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="exam_summary.html">Home</a></li>
+          <li class="breadcrumb-item active">Dashboard</li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <section class="section">
+      <div class="row">
+
+        <!-- Left side columns -->
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="card">
+              <div class="card-body text-center">
+                <h5 class="card-title">Total Marks</h5>
+                {:.2f}/100
+              </div>
+            </div>
+          </div>
+        </div><!-- End Left side columns -->
+      </div>
+      <div class="row">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Correctness</h5>
+            <table class="table table-bordered">
+              <tbody style="font-size: 15px;">
+                <tr class="table-success">
+                  <th scope="row">Correct</th>
+                  <td>{}</td>
+                </tr>
+                <tr class="table-danger">
+                  <th scope="row">Wrong</th>
+                  <td>{}</td>
+                </tr>
+                <tr class="table-warning">
+                  <th scope="row">Not Attempted</th>
+                  <td>{}</td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- End Table Variants -->
+
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header text-center b1">
+                        Total Questions
+                    </div>
+                    <div class="card-body text-center">
+                        {}
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header text-center b1">
+                        Questions Attempted
+                    </div>
+                    <div class="card-body text-center">
+                        {}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header text-center g1">
+                        Total Correct Questions
+                    </div>
+                    <div class="card-body text-center correct">
+                        {}
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header text-center g1">
+                        Percentage Correct
+                    </div>
+                    <div class="card-body text-center correct">
+                        {:.2f}%
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header text-center r1">
+                        Total Wrong Questions
+                    </div>
+                    <div class="card-body text-center wrong">
+                        {}
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header text-center r1">
+                        Percentage Wrong
+                    </div>
+                    <div class="card-body text-center wrong">
+                        {:.2f}%
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header text-center y1">
+                        Total Not Attempted Questions
+                    </div>
+                    <div class="card-body text-center not-attempted">
+                        {}
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header text-center y1">
+                        Percentage Not Attempted
+                    </div>
+                    <div class="card-body text-center not-attempted">
+                        {:.2f}%
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Overall view 
+          <span class="align-items-right"> <select id="filterDropdown">
+          <option value="all">All</option>
+          <option value="correct">Correct</option>
+          <option value="wrong">Wrong</option>
+          <option value="notAttempted">Not Attempted</option>
+      </select></span></h5>
+        {}
+      </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Key Topics </h5>
+          #null#
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    </div>
+  </footer><!-- End Footer -->
+
+</body>
+<script>
+  {}
+</script>
+</html>
